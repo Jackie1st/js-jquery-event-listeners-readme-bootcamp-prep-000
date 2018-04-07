@@ -7,8 +7,17 @@ function getIt() {
 }
 
 function frameIt() {
-  $('.tasty').on('load', function() {
-    
+  $('img').on('load', function() {
+    $('img').append('.tasty');
+    return;
+  });
+}
+
+function pressIt() {
+  $(document).on('keydown', function() {
+    if (key.which == ) {
+      alert('You have pressed a G.');
+    }
   });
 }
 
